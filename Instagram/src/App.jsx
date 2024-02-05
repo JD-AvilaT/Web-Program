@@ -1,10 +1,13 @@
 import React from 'react'
-import { Post } from './components/Post/Post.jsx'
+import { NavBar } from './components/NavBar/NavBar.jsx'
+import { AllPosts } from './components/AllPosts/AllPosts.jsx'
+
 
 export default function App(){
     return(
         <div>
-            <Post/>
+            <NavBar/>
+            <AllPosts/>
         </div>
     )
 }
