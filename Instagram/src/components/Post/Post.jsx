@@ -3,17 +3,16 @@ import React from 'react'
 import { Profile } from '../Profile/Profile.jsx'
 import { Photo } from '../Photo/Photo.jsx'
 import { DownPhoto } from '../DownPhoto/DownPhoto.jsx'
-import { LikesCounter } from '../LikesCounter/LikesCounter.jsx'
-import { Caption } from '../Caption/Caption.jsx'
+import { Description } from '../Description/Description.jsx'
+
 
 export function Post(){
     return(
-        <section>
-            <Profile/>
+        <section class="post">
+            <Profile variant="profile-post"/>
             <Photo/>
             <DownPhoto/>
-            <LikesCounter/>
-            <Caption/>
+            <Description/>
         </section>
         
     )

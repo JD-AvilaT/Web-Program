@@ -3,8 +3,8 @@ import React from 'react'
 
 export function Caption(){
     return(
-        <section>
-            <h6>AvilaT:</h6>
+        <section className='caption'>
+            <p><strong>AvilaT:</strong></p>
             <p>La' chimbitas, ¿a ver, dónde están?</p>
         </section>
         

@@ -3,6 +3,6 @@ import React from 'react'
 
 export function LikesCounter(){
     return(
-        <h6>7.110 Me gusta</h6>
+        <p className='likes-counter'><strong>7.110 Me gusta</strong></p>
     )
 }

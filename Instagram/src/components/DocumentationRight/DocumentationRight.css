@@ -1,0 +1,9 @@
+.documentation-right{
+    display: flex;
+    flex-wrap  : wrap;
+    justify-content: start;
+    list-style: none;
+    font-size: 12px;
+    color: #737373;
+    gap: 5px;
+}

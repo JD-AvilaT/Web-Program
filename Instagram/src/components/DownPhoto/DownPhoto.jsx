@@ -5,9 +5,9 @@ import { Save } from '../Save/Save.jsx'
 
 export function DownPhoto(){
     return(
-        <section>
+        <section className='down-photo'>
             <LikesBar/>
             <Save/>
         </section>
     )
-}
+}   

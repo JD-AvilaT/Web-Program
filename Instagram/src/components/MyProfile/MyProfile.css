@@ -1,0 +1,35 @@
+.my-profile{
+    display: flex;
+    flex-direction: row;
+}
+
+.my-profile img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.my-profile-stories-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    margin: 0;
+}
+
+.my-profile p{
+    margin: 0;
+}
+
+.my-profile-header-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.my-profile-header-right{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}

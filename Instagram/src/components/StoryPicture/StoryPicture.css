@@ -1,0 +1,18 @@
+.story-picture {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.story-picture-section{
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: solid rgb(221, 0, 129);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    
+}

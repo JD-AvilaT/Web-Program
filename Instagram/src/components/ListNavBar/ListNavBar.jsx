@@ -4,7 +4,7 @@ import { ItemNavBar } from '../ItemNavBar/ItemNavBar.jsx'
 
 export function ListNavBar(){
     return(
-        <section>
+        <section class="list-navbar">
             <ItemNavBar/>
             <ItemNavBar/>
             <ItemNavBar/>

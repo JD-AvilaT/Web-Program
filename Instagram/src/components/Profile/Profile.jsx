@@ -1,13 +1,13 @@
 import './Profile.css'
 import React from 'react'
-import { ProfilePicture } from '../ProfilePicture/ProfilePicture'
+import { ProfilePicture } from '../ProfilePicture/ProfilePicture.jsx'
 
 export function Profile(props){
-    const { width, corner} = props
+    const { variant } = props
     return(
-        <section>
-            <ProfilePicture/>
-            <h6>AvilaT</h6>
+        <section className={`profile ${variant}`}>
+            <ProfilePicture width="56px" height="56px"/>
+            <h6>Username</h6>
         </section>
         
     )

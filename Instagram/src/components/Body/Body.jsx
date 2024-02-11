@@ -1,13 +1,14 @@
-import './LeftSection.css'
+import './Body.css'
 import React from 'react'
-import { User } from '../User/User.jsx'
+import { Posts } from '../Posts/Posts.jsx'
 import { SuggestedList } from '../SuggestedList/SuggestedList.jsx'
 
-export function LeftSection(){
+export function Body(){
     return(
-        <section>
-            <User/>
+        <section className='body'>
+            <Posts/>
             <SuggestedList/>
         </section>
+        
     )
 }

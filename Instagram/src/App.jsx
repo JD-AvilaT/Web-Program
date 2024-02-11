@@ -1,14 +1,13 @@
 import React from 'react'
+import './App.css'
 import { NavBar } from './components/NavBar/NavBar.jsx'
-import { AllPosts } from './components/AllPosts/AllPosts.jsx'
-import { LeftSection } from './components/LeftSection/LeftSection.jsx'
+import { Container } from './components/Container/Container.jsx'
 
 export default function App(){
     return(
-        <div>
+        <div class="all">
             <NavBar/>
-            <AllPosts/>
-            <LeftSection/>
+            <Container/>
         </div>
     )
 }

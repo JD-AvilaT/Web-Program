@@ -1,0 +1,11 @@
+.story{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: -20px;
+}
+
+.story p{
+    font-size: 12px;
+    margin: 0;
+}

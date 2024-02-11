@@ -1,0 +1,10 @@
+.item-suggested{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-suggested p{
+    color: #0095F6;
+}

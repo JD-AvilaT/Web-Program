@@ -1,0 +1,7 @@
+.down-photo{
+    display: flex;
+    flex-direction: row;
+    width: 468px;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -6,7 +6,7 @@ import { DownNavBar } from '../DownNavBar/DownNavBar.jsx'
 
 export function NavBar(){
     return(
-        <section>
+        <section class="navbar">
             <Logo/>
             <ListNavBar/>
             <DownNavBar/>
