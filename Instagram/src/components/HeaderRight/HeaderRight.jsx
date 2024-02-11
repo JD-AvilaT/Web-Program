@@ -6,7 +6,7 @@ export function HeaderRight(){
     return(
         <section className='header-right'>
             <MyProfile variant="my-profile-header-right"/>
-            <p>Switch</p>
+            <p className='header-switch'>Switch</p>
         </section>
         
     )
