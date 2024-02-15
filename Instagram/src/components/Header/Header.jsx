@@ -7,7 +7,6 @@ export function Header(){
     return(
         <section class="header">
             <StoriesBar/>
-            <HeaderRight/>
         </section>
     )
 }

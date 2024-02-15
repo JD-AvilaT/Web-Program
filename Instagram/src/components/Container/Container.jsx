@@ -6,7 +6,6 @@ import { Body } from '../Body/Body.jsx'
 export function Container(){
     return(
         <section className='container'>
-            <Header/>
             <Body/>
         </section>
         

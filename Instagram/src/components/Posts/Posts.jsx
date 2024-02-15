@@ -6,14 +6,8 @@ export function Posts(){
     return(
         <section class="posts">
             <Post/>
-            <Post/>
-            <Post/>
-            <Post/>
-            <Post/>
-            <Post/>
-            <Post/>
-            <Post/>
         </section>
         
     )
 }
+

@@ -1,11 +1,12 @@
 import './Caption.css'
 import React from 'react'
 
-export function Caption(){
+export function Caption(props){
+    const {username, comment} = props
     return(
         <section className='caption'>
-            <p><strong>AvilaT:</strong></p>
-            <p>La' chimbitas, ¿a ver, dónde están?</p>
+            <p><strong>{username}</strong></p>
+            <p>{comment}</p>
         </section>
         
     )
