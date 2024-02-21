@@ -9,10 +9,6 @@ export function SuggestedList(){
         <section className='suggested-list'>
             <TitleSuggested/>
             <ItemSuggested/>
-            <ItemSuggested/>
-            <ItemSuggested/>
-            <ItemSuggested/>
-            <ItemSuggested/>
             <DocumentationRight/>
             <p>© 2024 INSTAGRAM FROM META</p>
 

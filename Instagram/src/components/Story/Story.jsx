@@ -1,13 +1,20 @@
 import './Story.css'
 import React from 'react'
 import { StoryPicture } from '../StoryPicture/StoryPicture.jsx'
+import dataPost from '../data/sampleData.js'
 
-export function Story(){
+export function Story(props){
+    const { pfp, username } = props
     return(
-        <section className="story">
-            <StoryPicture/>
-            <p>username</p>
-        </section>
+        dataPost.map(({ id, username, pfp }) => {
+            return (
+                <section key={id} class="story">
+                    <StoryPicture pfp={pfp}/>
+                    <p>{username}</p>
+                </section>
+            )
+        })
+        
         
     )
 }

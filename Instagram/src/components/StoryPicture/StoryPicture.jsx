@@ -1,10 +1,11 @@
 import './StoryPicture.css'
 import React from 'react'
 
-export function StoryPicture(){
+export function StoryPicture(props){
+    const { pfp } = props
     return(
         <section className="story-picture-section">
-            <img className="story-picture" src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2023/10/13/16971904238942.jpg"/>
+            <img className="story-picture" src={pfp}/>
         </section>
         
     )

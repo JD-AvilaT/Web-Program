@@ -8,11 +8,6 @@ export function StoriesBar(){
         <section class="stories-bar">
             <MyProfile variant="my-profile-stories-bar"/>
             <Story variant="ProfileStoriesBar"/>
-            <Story variant="ProfileStoriesBar"/>
-            <Story variant="ProfileStoriesBar"/>
-            <Story variant="ProfileStoriesBar"/>
-            <Story variant="ProfileStoriesBar"/>
-            <Story variant="ProfileStoriesBar"/>
         </section>
     )
 }

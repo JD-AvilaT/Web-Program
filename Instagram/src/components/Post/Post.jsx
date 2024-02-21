@@ -4,14 +4,14 @@ import { Profile } from '../Profile/Profile.jsx'
 import { Photo } from '../Photo/Photo.jsx'
 import { DownPhoto } from '../DownPhoto/DownPhoto.jsx'
 import { Description } from '../Description/Description.jsx'
-import  post  from '../data/sampleData.js'
+import  dataPost  from '../data/sampleData.js'
 
 
 export function Post(){
     return(
-        post.map(({ id, username, pfp, photo, likes, comment}) => {
+        dataPost.map(({ id, username, pfp, photo, likes, comment}) => {
             return (
-                <section class="post">
+                <section key={id} class="post">
                     <Profile username={username} src={pfp} variant="profile-post"/>
                     <Photo src={photo}/>
                     <DownPhoto/>
