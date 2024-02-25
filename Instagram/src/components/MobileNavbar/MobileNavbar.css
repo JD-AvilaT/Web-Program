@@ -1,0 +1,24 @@
+.mobile-navbar{
+    display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+    
+    .mobile-navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: fixed;
+        align-items: center;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        background-color: black;
+    }
+
+    .mobile-navbar svg{
+        width: 30px;
+        height: 30px;
+    }
+}

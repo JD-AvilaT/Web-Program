@@ -1,7 +1,11 @@
 .description{
     display: flex;
     flex-direction: column;
+    width: 458px;
+    padding: 0 5px 0 5px;
+    
 }
+
 .caption{
     display: flex;
     flex-direction: row;

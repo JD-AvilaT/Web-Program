@@ -1,16 +1,18 @@
 .navbar{
     position: fixed;
-    top: 0;
     left: 0;
     display: flex;
     height: 100%;
-    width: 244px;
     flex-direction: column;
-    justify-content: start;
-    align-items: space-between;
+    justify-content: space-between;
     background-color: #000000;
     border-right: 1px solid rgba(255, 255, 255, 0.127);
-    padding: 3%;
-    padding-left: 2%;
-    gap: 3%;
+    padding: 2%;
+}
+
+@media only screen and (max-width: 1024px) {
+    
+    .navbar{
+        display: none;
+    }
 }

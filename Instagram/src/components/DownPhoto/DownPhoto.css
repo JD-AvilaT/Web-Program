@@ -1,7 +1,8 @@
 .down-photo{
     display: flex;
     flex-direction: row;
-    width: 468px;
+    width: 458px;
+    padding: 0 5px 0 5px;
     justify-content: space-between;
     align-items: center;
 }

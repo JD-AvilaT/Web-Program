@@ -1,12 +1,17 @@
 import './ItemNavBar.css'
 import React from 'react'
 
+
 export function ItemNavBar(props){
-    const { icon, title } = props
+    const { icon, title, onClick } = props
+    const handleClick = (event) => {
+       onClick()
+    }
     return(
-        <section class="item-navbar">
+        <button class="item-navbar" 
+                 onClick={handleClick}>
             {icon}
             <h2>{title}</h2>
-        </section>
+        </button>
     )
 }

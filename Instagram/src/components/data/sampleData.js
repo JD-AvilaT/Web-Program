@@ -27,9 +27,9 @@ const dataPost = [
     },
     {
         id: crypto.randomUUID(),
-        username: "Jhayco",
+        username: "tatum0",
         pfp: "https://pics.craiyon.com/2023-07-06/7b5c495b9ae14167a1d7cc6d23a746ff.webp",
-        photo: "https://i0.wp.com/www.homosensual.com/wp-content/uploads/2021/07/beso_te%CC%81cnicas_gay_01.jpg?resize=700%2C682&ssl=1",
+        photo: "https://static01.nyt.com/images/2019/04/17/sports/17tatum-1/merlin_138870675_80a610d6-d7a6-4bcc-aa2d-cbe76d7fadf7-articleLarge.jpg?quality=75&auto=webp&disable=upscale",
         likes: "126,398,573",
         comment: "Me sigue o no me sigue todavía?"
     },
