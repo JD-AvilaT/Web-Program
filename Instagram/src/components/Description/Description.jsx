@@ -1,6 +1,8 @@
 import './Description.css'
 import React from 'react'
 
+//The component where the caption and the likes counter are located
+
 export function Description(props){
     const { likes, username, comment } = props
     return(

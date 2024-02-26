@@ -2,6 +2,7 @@ import './ListNavBar.css'
 import React from 'react'
 import { ItemNavBar } from '../ItemNavBar/ItemNavBar.jsx'
 
+//The section that has the items for the navbar   
 
 export function ListNavBar(){
     return(

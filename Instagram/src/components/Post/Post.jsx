@@ -6,6 +6,7 @@ import { DownPhoto } from '../DownPhoto/DownPhoto.jsx'
 import { Description } from '../Description/Description.jsx'
 import  dataPost  from '../data/sampleData.js'
 
+//The complete post
 
 export function Post(){
     return(

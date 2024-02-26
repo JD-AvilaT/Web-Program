@@ -4,6 +4,8 @@ import { useState } from 'react'
 import { ItemNavBar } from '../ItemNavBar/ItemNavBar.jsx'
 import { BurguerMenu } from '../BurguerMenu/BurguerMenu.jsx'
 
+//The down section of the navbar
+
 export function DownNavBar(){
     const [showMenu, setShowMenu ] = useState(false)
     const handleClick = (event) => {

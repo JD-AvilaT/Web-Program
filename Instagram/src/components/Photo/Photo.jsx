@@ -1,6 +1,7 @@
 import './Photo.css'
 import React from 'react'
-import posts from '../data/sampleData.js'
+
+//The photo for the post
 
 export function Photo(props){
     const { src } = props

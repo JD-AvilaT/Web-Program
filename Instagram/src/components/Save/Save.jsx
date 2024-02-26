@@ -1,6 +1,8 @@
 import './Save.css'
 import React from 'react'
 
+//The save post button
+
 export function Save(){
     return(
         <section className='save'>

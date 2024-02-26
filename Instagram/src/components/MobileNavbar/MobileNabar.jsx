@@ -1,6 +1,7 @@
 import './MobileNavbar.css'
 import React from 'react'
 
+//The navbar for mobile devices
 
 export function MobileNavbar(){
     return(

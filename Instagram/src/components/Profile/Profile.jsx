@@ -1,6 +1,7 @@
 import './Profile.css'
 import React from 'react'
-import { ProfilePicture } from '../ProfilePicture/ProfilePicture.jsx'
+
+//The section for the others users information
 
 export function Profile(props){
     const { variant, src, username } = props

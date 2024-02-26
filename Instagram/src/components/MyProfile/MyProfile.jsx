@@ -1,6 +1,8 @@
 import './MyProfile.css'
 import React from 'react'
 
+//The section for user information
+
 export function MyProfile(props){
     const { variant } = props
     return(

@@ -1,6 +1,8 @@
 import './TitleSuggested.css'
 import React from 'react'
 
+//The suggested title
+
 export function TitleSuggested(){
     return(
         <section className='title-suggested'>

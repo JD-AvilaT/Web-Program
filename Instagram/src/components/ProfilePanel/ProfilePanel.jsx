@@ -3,6 +3,8 @@ import React from 'react'
 import { MyProfile } from '../MyProfile/MyProfile.jsx'
 import { SuggestedList } from '../SuggestedList/SuggestedList.jsx'
 
+//The right section where Instagram suggests you other people
+
 export function ProfilePanel(props){
     const {  } = props
     return(

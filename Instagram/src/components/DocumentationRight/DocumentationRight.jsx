@@ -1,6 +1,8 @@
 import './DocumentationRight.css'
 import React from 'react'
 
+//The information to get help from Meta
+
 export function DocumentationRight(){
     return(
         <section className='documentation-right'>

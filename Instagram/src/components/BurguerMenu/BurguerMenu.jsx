@@ -1,6 +1,8 @@
 import './BurguerMenu.css'
 import React from 'react'
 
+//The burguer menu section
+
 export function BurguerMenu(){
     return(
         <section className='burguer-menu'>

@@ -1,6 +1,8 @@
 import './LikesBar.css'
 import React from 'react'
 
+//The three interactions that the user can use (like, comment and share)
+
 export function LikesBar(){
     return(
         <section className='likes-bar'>
