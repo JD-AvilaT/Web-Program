@@ -1,6 +1,5 @@
-// import { useState } from 'react'
 import './App.css'
-import { Header, Task, Button } from './components/index.js'
+import { Header, Task } from './components/index.js'
 import { useState } from 'react';
 
 function App() {
@@ -13,22 +12,32 @@ function App() {
     title: taskTitle,
     done: false
   }
+  setTasks(prevArray => [...prevArray, newTask])
+  }
 
   const deleteTask = (taskId) => {
     setTasks(prevTasks =>
-      prevTasks.filter(tasks.id !== taskId))
+      prevTasks.filter(tasks => tasks.id !== taskId))
+  }
 
+  const checkboxChange = (taskId) => {
+    setTasks(prevTasks =>
+      prevTasks.map(task =>
+        task.id === taskId ? { ...task, done: !task.done } : task
+      )
+    );
   }
-  setTasks(prevArray => [...prevArray, newTask])
-  }
+
   return (
     <main>
       <Header onSubmit={addTask}/>
       <section>
-        {tasks.map(({ title, id }) => (
+        {tasks.map(({ title, id, done }) => (
           <div key={id}>
             <Task title={title}
-                  onDelete={() => deleteTask(id)}/>
+                  onDelete={() => deleteTask(id)}
+                  completed={done}
+                  onToggle={() => checkboxChange(id)}/>
           </div>
         ))}
 
@@ -36,5 +45,4 @@ function App() {
     </main>
   )
 }
-
 export default App
