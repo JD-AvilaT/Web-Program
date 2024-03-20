@@ -1,9 +1,10 @@
 import './App.css'
-import { Header, Task } from './components/index.js'
+import { Header, Task, Filters } from './components/index.js'
 import { useState } from 'react';
 
 function App() {
   const [tasks, setTasks] = useState([]);
+  const [filterType, setFilterType] = useState('all');
 
   function addTask (taskTitle) {
     console.log(taskTitle); 
@@ -28,11 +29,27 @@ function App() {
     );
   }
 
+  function handleFilterChange(type) {
+    setFilterType(type);
+  }
+
+  function filterTasks() {
+    return tasks.filter((task) => {
+      if (filterType === 'completed') {
+        return task.done;
+      } else if (filterType === 'pending') {
+        return !task.done;
+      }
+      return true;
+    });
+  }
+
   return (
     <main>
       <Header onSubmit={addTask}/>
+      <Filters filterHandler={handleFilterChange} />
       <section>
-        {tasks.map(({ title, id, done }) => (
+        {filterTasks().map(({ title, id, done }) => (
           <div key={id}>
             <Task title={title}
                   onDelete={() => deleteTask(id)}
