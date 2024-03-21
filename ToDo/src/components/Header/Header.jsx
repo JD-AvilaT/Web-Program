@@ -6,13 +6,13 @@ export function Header({ onSubmit }){
     const [ task, setTask ] = useState('')
 
     const readValue = (e) => {
-        //e.preventDefault();
         setTask(e.target.value);
     }
 
     const handleTasks = (e) =>{
         e.preventDefault()
         onSubmit(task)
+        setTask("")
     }
     return(
         <form onSubmit={handleTasks}>
