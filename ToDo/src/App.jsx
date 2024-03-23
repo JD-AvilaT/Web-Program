@@ -1,5 +1,5 @@
 import './App.css'
-import { Header, Task, Filters } from './components/index.js'
+import { Header, Task, Filters, Footer } from './components/index.js'
 import { useState } from 'react';
 
 function App() {
@@ -7,7 +7,6 @@ function App() {
   const [filterType, setFilterType] = useState('all');
 
   function addTask (taskTitle) {
-    console.log(taskTitle); 
     const newTask = {
     id: crypto.randomUUID(),
     title: taskTitle,
@@ -43,7 +42,10 @@ function App() {
       return true;
     });
   }
-
+  
+  function handleDeleteCompleted() {
+    setTasks(prevTasks => prevTasks.filter(task => !task.done));
+  }
   return (
     <main>
       <Header onSubmit={addTask}/>
@@ -57,8 +59,9 @@ function App() {
                   onToggle={() => checkboxChange(id)}/>
           </div>
         ))}
-
       </section>
+      <Footer tasks={tasks}
+              onDeleteCompleted={handleDeleteCompleted}/>
     </main>
   )
 }
