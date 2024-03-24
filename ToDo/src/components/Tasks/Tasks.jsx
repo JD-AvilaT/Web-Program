@@ -22,7 +22,7 @@ export function Tasks() {
                 </article>
               ))}
             </div> ): (
-            <p><strong>No tasks found. Start by adding a new task!</strong></p>
+            <p className='advice'><strong>No tasks found. Start by adding a new task!</strong></p>
         );
         
     };
