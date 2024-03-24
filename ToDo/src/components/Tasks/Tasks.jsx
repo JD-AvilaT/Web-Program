@@ -3,7 +3,10 @@ import { useTask } from '../../hooks/useTasks.js';
 import { Task } from '../Task/Task.jsx';
 
 export function Tasks() {
-    const { tasks, checkboxChange, deleteTask, filterTasks } = useTask();
+    const { tasks,
+            checkboxChange,
+            deleteTask,
+            filterTasks } = useTask();
 
     const taskValidation = tasks.length > 0;
 
@@ -19,8 +22,9 @@ export function Tasks() {
                 </article>
               ))}
             </div> ): (
-            <p><strong>There are no tasks</strong></p>
+            <p><strong>No tasks found. Start by adding a new task!</strong></p>
         );
+        
     };
 
     return getTasks(taskValidation);

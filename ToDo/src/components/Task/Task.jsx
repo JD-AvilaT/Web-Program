@@ -6,8 +6,11 @@ export function Task(props){
             onDelete,
             onToggle,
             completed } = props
+
+    const taskClasses = completed ? 'task completed' : 'task';
+    
     return(
-        <article className='task'>
+        <article className={taskClasses}>
             <input checked={completed}
                     type='checkbox'
                     onChange={onToggle}/>
