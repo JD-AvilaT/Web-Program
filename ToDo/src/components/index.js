@@ -1,6 +1,0 @@
-export * from './Header/Header'
-export * from './Filters/Filters'
-export * from './Task/Task'
-export * from './Footer/Footer'
-export * from './Button/Button'
-export * from './Tasks/Tasks'
