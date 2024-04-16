@@ -1,0 +1,19 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    
+}
+
+.image{
+    border-radius: 25px;
+    border: 3 solid black;
+    max-width: 400px;
+    min-width: 400px;
+    max-height: 500px;
+    min-height: 500px;
+    object-fit: cover;
+    border: 2px solid rgb(101, 10, 247);
+}
